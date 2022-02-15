@@ -25,6 +25,7 @@ class Marquee:
         self.root.mainloop()
 
     def change_str(self):
+        self.root.lift()
         tmp = self.str_var.get()
         self.str_var.set(tmp[1:] + tmp[0])
         self.root.after(self.interval, self.change_str)
