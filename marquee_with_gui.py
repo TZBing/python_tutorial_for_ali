@@ -31,4 +31,5 @@ class Marquee:
         self.root.after(self.interval, self.change_str)
 
 
-Marquee(tkinter.Tk(), '阿梨今天开胯了吗...   ')
+if __name__ == '__main__':
+    Marquee(tkinter.Tk(), '阿梨今天开胯了吗...   ')
